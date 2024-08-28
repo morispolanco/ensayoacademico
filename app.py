@@ -27,10 +27,10 @@ def crear_columna_info():
     6. Si lo desea, descargue un documento DOCX con toda la información y enlaces activos.
 
     ### Autor y actualización:
-    **Moris Polanco**, 25 ag 2024
+    **Moris Polanco**, 27 ag 2024
 
     ### Cómo citar esta aplicación (formato APA):
-    Polanco, M. (2024). *Generador de Ensayos Académicos* [Aplicación web]. https://academic-essay-generator.streamlit.app
+    Polanco, M. (2024). *Generador de Ensayos Académicos* [Aplicación web]. https://ensayoacademico.streamlit.app
 
     ---
     **Nota:** Esta aplicación utiliza inteligencia artificial para generar contenido basado en información disponible en línea. Siempre verifique la información con fuentes académicas para un análisis más profundo.
@@ -77,13 +77,14 @@ with col2:
         2. Desarrollo (argumenta la tesis, utilizando las fuentes y autores proporcionados)
         3. Conclusión (resume los puntos principales y reafirma la tesis)
 
+        No escribas las instrucciones ni ejemplos ni las referencias al principio.
         Asegúrate de incluir citas en el texto y una lista de referencias al final. 
         Para cada cita en el texto, usa el formato [Autor, Año] y asegúrate de que corresponda con una entrada en la lista de referencias."""
 
         payload = json.dumps({
             "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
             "prompt": prompt,
-            "max_tokens": 2048,
+            "max_tokens": 3048,
             "temperature": 0.7,
             "top_p": 0.7,
             "top_k": 50,
