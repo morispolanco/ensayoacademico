@@ -159,7 +159,7 @@ with col2:
     titulo = st.text_input("Ingrese el título de su ensayo:")
     tesis = st.text_area("Escriba la tesis que quiere defender:")
     autores = st.text_input("Ingrese los autores que desea citar (separados por comas):")
-    audiencia = st.selectbox("Seleccione la audiencia del ensayo:", ["Público en general", "Conocedores", "Especialistas"])
+    audiencia = st.selectbox("Seleccione la audiencia del ensayo:", ["General", "Conocedores", "Especialistas"])
 
     if st.button("Generar ensayo académico"):
         if titulo and tesis and autores and audiencia:
